@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseLayout component Renders on screen 1`] = `
+<div>
+  <nav>
+    <a
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      href="/list"
+    >
+      V-list
+    </a>
+    <a
+      href="/about"
+    >
+      About
+    </a>
+  </nav>
+  <footer />
+</div>
+`;
