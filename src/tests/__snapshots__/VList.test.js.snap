@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component Renders on screen 1`] = `
+<div>
+  <main>
+    <section>
+      <section>
+        <h1>
+          Categories
+        </h1>
+      </section>
+    </section>
+    <section>
+      <header />
+      <div
+        style="position: relative; height: 800px; width: 100%; overflow: auto; will-change: transform; direction: ltr;"
+      >
+        <div
+          style="height: 100px; width: 100%;"
+        >
+          <div
+            style="position: absolute; left: 0px; top: 0px; height: 50px; width: 100%;"
+          >
+            iPhone 9
+          </div>
+          <div
+            style="position: absolute; left: 0px; top: 50px; height: 50px; width: 100%;"
+          >
+            Crystal chandelier maria theresa for 12 light
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;
