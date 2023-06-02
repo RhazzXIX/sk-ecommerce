@@ -1,5 +1,7 @@
-import { render, screen } from "@testing-library/react";
-import VList from "../app/list/page";
+import { render, screen, waitFor } from "@testing-library/react";
+import ProductSection from "../components/ProductSection";
+import "@testing-library/jest-dom";
+import { act } from "react-dom/test-utils";
 
 global.fetch = jest.fn();
 
@@ -46,9 +48,9 @@ fetch.mockResolvedValue({
   json: () => newItems,
 });
 
-describe("List component", () => {
-  it("Renders on screen", async () => {
-    const { container } = render(<VList />);
+describe("ProductsSection component", () => {
+  it("Renders on page", async () => {
+    const { container } = render(<ProductSection />);
     await screen.findByText("iPhone 9");
     expect(container).toMatchSnapshot();
   });

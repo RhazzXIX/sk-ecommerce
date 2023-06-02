@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductsSection component Renders on page 1`] = `
+<div>
+  <section>
+    <header />
+    <div
+      style="position: relative; height: 800px; width: 100%; overflow: auto; will-change: transform; direction: ltr;"
+    >
+      <div
+        style="height: 20000px; width: 100%;"
+      >
+        <div
+          class="card"
+          style="position: absolute; left: 0px; top: 0px; height: 200px; width: 100%;"
+        >
+          <img
+            alt=""
+            data-nimg="1"
+            decoding="async"
+            height="0"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F11%2F1.jpg&w=16&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F11%2F1.jpg&w=16&q=75 1x"
+            style="color: transparent;"
+            width="0"
+          />
+          <h4>
+            iPhone 9
+          </h4>
+          <p>
+            An apple mobile which is nothing like apple
+          </p>
+          <p>
+            $ 
+            549
+            .00
+          </p>
+          <div
+            class="qtyContainer"
+          >
+            <label
+              for="qty"
+            >
+              Qty:
+              <input
+                id="qty"
+                inputmode="numeric"
+                placeholder="0"
+                type="text"
+                value=""
+              />
+            </label>
+            <button
+              class="increment"
+            >
+              +
+            </button>
+            <button
+              class="decrement"
+            >
+              -
+            </button>
+          </div>
+          <p
+            class="totalCost"
+          >
+            $ 
+            0
+            .00
+          </p>
+          <button
+            class="addToCart"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div
+          class="card"
+          style="position: absolute; left: 0px; top: 200px; height: 200px; width: 100%;"
+        >
+          <img
+            alt=""
+            data-nimg="1"
+            decoding="async"
+            height="0"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F11%2F1.jpg&w=16&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fi.dummyjson.com%2Fdata%2Fproducts%2F11%2F1.jpg&w=16&q=75 1x"
+            style="color: transparent;"
+            width="0"
+          />
+          <h4>
+            Crystal chandelier maria theresa for 12 light
+          </h4>
+          <p>
+            Crystal chandelier maria theresa for 12 light
+          </p>
+          <p>
+            $ 
+            47
+            .00
+          </p>
+          <div
+            class="qtyContainer"
+          >
+            <label
+              for="qty"
+            >
+              Qty:
+              <input
+                id="qty"
+                inputmode="numeric"
+                placeholder="0"
+                type="text"
+                value=""
+              />
+            </label>
+            <button
+              class="increment"
+            >
+              +
+            </button>
+            <button
+              class="decrement"
+            >
+              -
+            </button>
+          </div>
+          <p
+            class="totalCost"
+          >
+            $ 
+            0
+            .00
+          </p>
+          <button
+            class="addToCart"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
