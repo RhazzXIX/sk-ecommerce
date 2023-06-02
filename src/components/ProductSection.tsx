@@ -1,20 +1,29 @@
-"use client";
 import { CSSProperties } from "react";
 import { useState } from "react";
 import { FixedSizeList as List } from "react-window";
 import InfiniteLoader from "react-window-infinite-loader";
 import ProductCard from "@/components/ProductCard";
 
-export default function ProductSection(props) {
+export default function ProductSection({
+  addToCart,
+}: {
+  addToCart: ({}: product) => void;
+}) {
   const [data, setData] = useState<product[]>([]);
-  const [itemCount, setItemCount] = useState(100);
+  const itemCount = 100;
   let loading: Boolean;
 
   const Row = ({ index, style }: { index: number; style: CSSProperties }) => {
     const item: product = data[index];
-    let content;
     if (!item) return null;
-    return <ProductCard key={item.id} style={style} product={item} />;
+    return (
+      <ProductCard
+        key={item.id}
+        style={style}
+        product={item}
+        addItem={addToCart}
+      />
+    );
   };
 
   const isItemLoaded = (index: number) => {
