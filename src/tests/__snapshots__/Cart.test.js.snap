@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart component Gets rendered 1`] = `
+<div>
+  <section
+    id="cart-page"
+  >
+    <header>
+      <h4>
+        Cart
+      </h4>
+      <h5>
+        Items:
+      </h5>
+      <h5>
+        Costs:
+      </h5>
+    </header>
+    <p>
+      No items on the cart
+    </p>
+    <footer>
+      <h4>
+        Total Cost: $ 
+        0
+        .00
+      </h4>
+      <button>
+        Login to Pay
+      </button>
+    </footer>
+  </section>
+</div>
+`;
