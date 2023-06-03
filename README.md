@@ -34,3 +34,4 @@ Link to the  code:
 https://github.com/RhazzXIX/sk-ecommerce
 
 Live site:  
+https://main--steady-pasca-1022e5.netlify.app/
