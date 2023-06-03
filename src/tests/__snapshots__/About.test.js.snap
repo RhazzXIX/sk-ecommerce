@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component Renders on screen 1`] = `
+<div>
+  <main
+    class="main"
+  >
+    <h1>
+      Project SK E-com
+    </h1>
+    <p>
+      This project was created for SK Innovate Group
+    </p>
+    <h2
+      class="h2"
+    >
+      Key Requirements:
+    </h2>
+    <ul
+      class="ul"
+    >
+      <li
+        class="li"
+      >
+        Next.js
+      </li>
+      <li
+        class="li"
+      >
+        NextAuth.js
+      </li>
+      <li
+        class="li"
+      >
+        ReactRedux
+      </li>
+      <li
+        class="li"
+      >
+        TypeScript
+      </li>
+      <li
+        class="li"
+      >
+        Eslint
+      </li>
+      <li
+        class="li"
+      >
+        Prettier
+      </li>
+      <li
+        class="li"
+      >
+        Material U.I.
+      </li>
+      <li
+        class="li"
+      >
+        Styled-Component
+      </li>
+      <li
+        class="li"
+      >
+        react-window
+      </li>
+      <li
+        class="li"
+      >
+        Dummy Json
+      </li>
+    </ul>
+    <h2
+      class="h2"
+    >
+      Implemented:
+    </h2>
+    <ul
+      class="ul"
+    >
+      <li
+        class="li"
+      >
+        <p>
+          Next.Js
+        </p>
+        <p>
+             
+          Learned Next.Js and used it to create a React app.
+        </p>
+      </li>
+      <li
+        class="li"
+      >
+        <p>
+          TypeScript
+        </p>
+        <p>
+             
+          Learned TypeScript and tried to implement it on the app.
+        </p>
+      </li>
+      <li
+        class="li"
+      >
+        <p>
+          react-window
+        </p>
+        <p>
+             
+          Learned react-window, react-window-infinite-loader, react-virtualized-auto-sizer and used it to render data from Dummy JSON.
+        </p>
+      </li>
+      <li
+        class="li"
+      >
+        <p>
+          Eslint & Prettier
+        </p>
+        <p>
+             
+          Used for "Linting" / format the code to make it more readable. 
+ Familiar since I've been using it before on my other projects.
+        </p>
+      </li>
+      <li
+        class="li"
+      >
+        <p>
+          Dummy Json
+        </p>
+        <p>
+             
+          Used as a mock backend server for fetching product data. 
+ Familiar since I've been using it before on my other projects.
+        </p>
+      </li>
+    </ul>
+    <p
+      class="pLink"
+    >
+      Link to the  
+      <a
+        class="a"
+        href="https://github.com/RhazzXIX/sk-ecommerce"
+      >
+        code
+      </a>
+    </p>
+  </main>
+</div>
+`;

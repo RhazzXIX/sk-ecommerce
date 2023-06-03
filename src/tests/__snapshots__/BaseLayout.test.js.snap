@@ -13,12 +13,16 @@ exports[`BaseLayout component Renders on screen 1`] = `
     >
       V-list
     </a>
-    <a
-      href="/about"
-    >
-      About
-    </a>
   </nav>
-  <footer />
+  <footer>
+    <p>
+      <a
+        href="/about"
+      >
+        About
+      </a>
+      &gt;&gt;&gt;
+    </p>
+  </footer>
 </div>
 `;

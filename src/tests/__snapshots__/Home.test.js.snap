@@ -6,13 +6,19 @@ exports[`Home component Renders on screen 1`] = `
     class="main"
   >
     <h1>
-      SK Innovation Storage
+      SK Innovate Storage
     </h1>
-    <a
-      href="/list"
+    <p
+      class="p"
     >
-       Virtual List storage
-    </a>
+      Photo by:  
+      <a
+        class="a"
+        href="https://unsplash.com/@nessa_rin"
+      >
+        Rinson Chory
+      </a>
+    </p>
   </main>
 </div>
 `;

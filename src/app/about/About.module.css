@@ -1,0 +1,24 @@
+.main {
+  padding: 60px 120px;
+}
+
+.h2 {
+  margin-top: 30px;
+}
+
+.ul {
+  list-style: circle;
+  margin-top: 12px;
+}
+
+.li {
+  margin-left: 25px;
+}
+
+.pLink {
+  margin-top: 30px;
+}
+
+.a {
+  text-decoration: underline;
+}
