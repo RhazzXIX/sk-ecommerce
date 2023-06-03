@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  flex: 1;
+  flex: auto;
 }
 
 a {
@@ -70,4 +70,8 @@ body > footer a:active {
 body > nav a:hover,
 body > footer a:hover {
   box-shadow: 0 0 4px #219ebc;
+}
+
+ul {
+  list-style: none;
 }

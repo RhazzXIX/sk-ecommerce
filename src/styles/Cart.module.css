@@ -1,0 +1,90 @@
+.section {
+  position: absolute;
+  right: 30px;
+  top: 44px;
+  width: 380px;
+  background-color: white;
+  padding: 18px;
+  box-shadow: 0 0 4px black;
+  border-radius: 8px;
+  min-height: 220px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  z-index: 1;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(2 auto);
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 12px;
+  row-gap: 6px;
+}
+
+.h5 {
+  grid-row: 2 / 3;
+}
+
+.h5:last-child {
+  justify-self: center;
+}
+
+.li {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: repeat(3, auto);
+  gap: 4px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.li:hover {
+  box-shadow: 0 0 4px black;
+}
+
+.p {
+  margin: 18px;
+  margin-top: 26px;
+  font-size: 1.2rem;
+}
+
+.img {
+  width: auto;
+  height: auto;
+  max-height: 100px;
+  max-width: 100px;
+  grid-row: 2 / 3;
+  border-radius: 8px;
+}
+
+.pList {
+  grid-row: 2 / 3;
+  align-self: center;
+}
+
+.delButton {
+  width: 20px;
+  height: 20px;
+  grid-column: 3 / 4;
+  justify-self: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 16px;
+}
+
+.total {
+  text-align: end;
+  padding-right: 26px;
+}
+
+.login {
+  max-width: max-content;
+  margin: auto;
+  padding: 4px 8px;
+  border-radius: 12px;
+}

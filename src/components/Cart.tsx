@@ -1,6 +1,7 @@
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import del from "../../public/trash-can-outline.svg";
 import Image from "next/image";
+import styles from "../styles/Cart.module.css";
 
 const Cart = ({
   products,
@@ -28,30 +29,37 @@ const Cart = ({
   }, [products]);
 
   return (
-    <section id="cart-page">
-      <header>
+    <section className={styles.section} id="cart-page">
+      <header className={styles.header}>
         <h4>Cart</h4>
-        <h5>Items:</h5>
-        <h5>Costs:</h5>
+        <h5 className={styles.h5}>Items:</h5>
+        <h5 className={styles.h5}>Costs:</h5>
       </header>
       {products.length !== 0 ? (
         <ul>
           {products.map((product) => {
             if (!product.qty) return null;
             return (
-              <li key={product.id}>
+              <li className={styles.li} key={product.id}>
                 <h4>{product.title}</h4>
                 <Image
+                  className={styles.img}
                   src={product.images[0]}
                   alt={product.title}
-                  width={0}
-                  height={0}
+                  width={100}
+                  height={100}
                 />
-                <p>
+                <p className={styles.pList}>
                   $ {product.price}.00 x {product.qty}
                 </p>
-                <p>$ {product.price * product.qty}.00</p>
-                <button onClick={deleteProduct} data-id={product.id}>
+                <p className={styles.pList}>
+                  $ {product.price * product.qty}.00
+                </p>
+                <button
+                  className={styles.delButton}
+                  onClick={deleteProduct}
+                  data-id={product.id}
+                >
                   <Image
                     src={del}
                     alt="delete"
@@ -65,11 +73,13 @@ const Cart = ({
           })}
         </ul>
       ) : (
-        <p>No items on the cart</p>
+        <p className={styles.p}>No items for shipment</p>
       )}
-      <footer>
-        <h4>Total Cost: $ {totalCost}.00</h4>
-        <button onClick={showLogin}>Login to Pay</button>
+      <footer className={styles.footer}>
+        <h4 className={styles.total}>Total Cost: $ {totalCost}.00</h4>
+        <button className={styles.login} onClick={showLogin}>
+          Login to send shipment
+        </button>
       </footer>
     </section>
   );
