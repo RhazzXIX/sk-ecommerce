@@ -10,7 +10,7 @@ const Cart = ({
 }: {
   products: product[];
   deleteProduct: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-  showLogin: () => void;
+  showLogin?: () => void;
 }) => {
   const [totalCost, setTotalCost] = useState(0);
   const getTotalCost = () => {
