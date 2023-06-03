@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CSSProperties, useState } from "react";
+import styles from "../styles/ProductCard.module.css";
 
 const ProductCard = ({
   product,
@@ -7,7 +8,7 @@ const ProductCard = ({
   style,
 }: {
   product: product;
-  addItem: ({}:product) => void;
+  addItem: ({}: product) => void;
   style: CSSProperties;
 }) => {
   const [quantity, setQuantity] = useState(0);
@@ -38,13 +39,19 @@ const ProductCard = ({
     addItem(productToCart);
   };
   return (
-    <div className="card" style={style}>
-      <Image src={product.images[0]} alt={""} height={0} width={0} />
-      <h4>{product.title}</h4>
-      <p>{product.description}</p>
-      <p>$ {product.price}.00</p>
-      <div className="qtyContainer">
-        <label htmlFor="qty">
+    <div className={styles.card} style={style}>
+      <Image
+        className={styles.imgProduct}
+        src={product.images[0]}
+        alt={""}
+        height={200}
+        width={200}
+      />
+      <h4 className={styles.h4}>{product.title}</h4>
+      <p className={styles.p}>{product.description}</p>
+      <p className={styles.p}>$ {product.price}.00</p>
+      <div className={styles.qtyContainer}>
+        <label className={styles.label} htmlFor="qty">
           Qty:
           <input
             id="qty"
@@ -55,16 +62,16 @@ const ProductCard = ({
             value={quantity !== 0 ? quantity : ""}
           />
         </label>
-        <button className="increment" onClick={increment}>
+        <button className={styles.qtyButton} onClick={increment}>
           +
         </button>
-        <button className="decrement" onClick={decrement}>
+        <button className={styles.qtyButton} onClick={decrement}>
           -
         </button>
       </div>
-      <p className="totalCost">$ {product.price * quantity}.00</p>
-      <button className="addToCart" onClick={addItems}>
-        Add to Cart
+      <p className={styles.p}>$ {product.price * quantity}.00</p>
+      <button className={styles.button} onClick={addItems}>
+        Ship Item
       </button>
     </div>
   );

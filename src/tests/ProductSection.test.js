@@ -2,7 +2,6 @@ import { render, screen, waitFor } from "@testing-library/react";
 import ProductSection from "../components/ProductSection";
 import "@testing-library/jest-dom";
 import { act } from "react-dom/test-utils";
-
 global.fetch = jest.fn();
 
 const newItems = {
@@ -50,7 +49,11 @@ fetch.mockResolvedValue({
 
 describe("ProductsSection component", () => {
   it("Renders on page", async () => {
-    const { container } = render(<ProductSection />);
+    const { container } = render(
+    <section style={{height: '960px'}}>
+      <ProductSection/>
+    </section>
+    );
     await screen.findByText("iPhone 9");
     expect(container).toMatchSnapshot();
   });

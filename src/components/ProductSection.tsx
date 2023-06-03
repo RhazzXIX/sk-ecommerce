@@ -4,6 +4,7 @@ import { FixedSizeList as List } from "react-window";
 import InfiniteLoader from "react-window-infinite-loader";
 import AutoSizer from "react-virtualized-auto-sizer";
 import ProductCard from "@/components/ProductCard";
+import styles from "../styles/ProductSection.module.css";
 
 export default function ProductSection({
   addToCart,
@@ -53,8 +54,7 @@ export default function ProductSection({
     });
   };
   return (
-    <section>
-      <header></header>
+    <section className={styles.section}>
       <InfiniteLoader
         isItemLoaded={isItemLoaded}
         itemCount={itemCount}
@@ -68,7 +68,7 @@ export default function ProductSection({
                 onItemsRendered={onItemsRendered}
                 ref={ref}
                 height={height}
-                itemSize={200}
+                itemSize={280}
                 width={width}
               >
                 {Row}

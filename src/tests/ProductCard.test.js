@@ -65,10 +65,10 @@ describe("ProductCard component", () => {
       expect(totalCost.textContent).toBe(`$ ${product.price * quantity}.00`);
     });
 
-    it("User can add Item to Cart", async () => {
+    it("User can add Item to ship", async () => {
       render(<ProductCard product={product} addItem={addItemToCart} />);
       const addCartBtn = screen.getByRole("button", {
-        name: "Add to Cart",
+        name: "Ship Item",
       });
       const incrementBtn = screen.getByRole("button", {
         name: "+",

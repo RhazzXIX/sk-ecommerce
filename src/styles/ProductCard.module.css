@@ -1,0 +1,86 @@
+.card {
+  width: 100%;
+  max-width: 1000px;
+  padding: 12px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 2fr 2fr;
+  grid-template-rows: auto 1fr auto auto;
+  align-items: center;
+  justify-items: center;
+  min-height: 230px;
+  gap: 8px;
+  margin: 26px;
+}
+
+.card:hover {
+  box-shadow: 0 0 8px black;
+}
+
+.imgProduct {
+  grid-area: 1 / 1 / -1 / 2;
+  justify-self: center;
+  align-self: center;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+  /* margin: 0 16px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h4 {
+  grid-area: 1 / 2 / 2 / 3;
+  font-size: 1rem;
+}
+
+.p:nth-of-type(1n + 2) {
+  font-size: 1.3rem;
+}
+
+.p:first-of-type {
+  grid-area: 2 / 2 / 3 / -1;
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+.button {
+  grid-column: 2 / -1;
+  width: 200px;
+  align-self: center;
+  justify-self: center;
+}
+
+.qtyContainer {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 4px;
+}
+
+.label {
+  display: flex;
+  gap: 6px;
+  grid-column: 1 / -1;
+}
+
+.input {
+  width: 60px;
+}
+
+.qtyButton {
+  grid-row: 2 / -1;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qtyButton:last-of-type {
+  justify-self: end;
+  grid-column: 2 / -1;
+}

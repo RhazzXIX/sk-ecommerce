@@ -3,30 +3,45 @@
 exports[`Cart component Gets rendered 1`] = `
 <div>
   <section
+    class="section"
     id="cart-page"
   >
-    <header>
+    <header
+      class="header"
+    >
       <h4>
         Cart
       </h4>
-      <h5>
+      <h5
+        class="h5"
+      >
         Items:
       </h5>
-      <h5>
+      <h5
+        class="h5"
+      >
         Costs:
       </h5>
     </header>
-    <p>
-      No items on the cart
+    <p
+      class="p"
+    >
+      No items for shipment
     </p>
-    <footer>
-      <h4>
+    <footer
+      class="footer"
+    >
+      <h4
+        class="total"
+      >
         Total Cost: $ 
         0
         .00
       </h4>
-      <button>
-        Login to Pay
+      <button
+        class="login"
+      >
+        Login to send shipment
       </button>
     </footer>
   </section>

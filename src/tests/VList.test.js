@@ -57,7 +57,7 @@ describe("List component", () => {
   });
   it(`Let's users see what in the cart`, async () => {
     render(<VList />);
-    const cartBtn = screen.getByRole("button", { name: "Cart" });
+    const cartBtn = screen.getByRole("button", { name: "To ship" });
 
     expect(
       screen.queryByRole("heading", { name: "Cart" })
@@ -70,7 +70,7 @@ describe("List component", () => {
 
   it(`Let's the user close the cart by clicking anywhere on the Shop page`, async () => {
     render(<VList />);
-    const cartBtn = screen.getByRole("button", { name: "Cart" });
+    const cartBtn = screen.getByRole("button", { name: "To ship" });
     const shopPage = screen.getByRole("main");
     await user.click(cartBtn);
     expect(screen.getByRole("heading", { name: "Cart" })).toBeInTheDocument();
