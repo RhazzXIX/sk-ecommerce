@@ -1,12 +1,15 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <h1>SK Innovation Storage</h1>
-      <Link href={"/list"}> Virtual List storage</Link>
+      <p className={styles.p}>
+        Photo by: &nbsp;
+        <a className={styles.a} href={"https://unsplash.com/@nessa_rin"}>
+          Rinson Chory
+        </a>
+      </p>
     </main>
   );
 }
