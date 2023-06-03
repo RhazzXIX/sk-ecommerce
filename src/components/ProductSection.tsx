@@ -2,6 +2,7 @@ import { CSSProperties } from "react";
 import { useState } from "react";
 import { FixedSizeList as List } from "react-window";
 import InfiniteLoader from "react-window-infinite-loader";
+import AutoSizer from "react-virtualized-auto-sizer";
 import ProductCard from "@/components/ProductCard";
 
 export default function ProductSection({
@@ -60,16 +61,20 @@ export default function ProductSection({
         loadMoreItems={loadMoreItems}
       >
         {({ onItemsRendered, ref }) => (
-          <List
-            itemCount={itemCount}
-            onItemsRendered={onItemsRendered}
-            ref={ref}
-            height={800}
-            itemSize={200}
-            width={"100%"}
-          >
-            {Row}
-          </List>
+          <AutoSizer>
+            {({ height, width }: { height: number; width: number }) => (
+              <List
+                itemCount={itemCount}
+                onItemsRendered={onItemsRendered}
+                ref={ref}
+                height={height}
+                itemSize={200}
+                width={width}
+              >
+                {Row}
+              </List>
+            )}
+          </AutoSizer>
         )}
       </InfiniteLoader>
     </section>
